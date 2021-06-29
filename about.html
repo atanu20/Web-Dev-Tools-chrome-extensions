@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <title>My First Chrome Extention</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Mate SC', serif;
+        }
+        
+      .container{
+        width: 500px;
+        
+        
+        padding: 10px;
+        
+        
+      }
+      #panel{
+          width: 100%;
+          height: 250px;
+          background-color: rgb(4, 99, 42);
+      }
+      
+      .img{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        display: block;
+      }
+      .text{
+          margin: 15px 0;
+          background-color: purple;
+          color: #fff;
+          text-align: center;
+      }
+      .btn-primary{
+          background-color: #7309d6;
+          padding: 8px 15px;
+          border-radius: 0;
+          outline: none;
+          border:  none;
+      }
+      
+    </style>
+  </head>
+  <body >
+    <br><br>
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="img">
+        <div class="text">
+           <h3>Welcome to Web Dev Tools</h3>
+        </div>
+        <div class="tab">
+          
+                <div class="text-center">
+                  <a href="index.html" class="btn btn-primary ">Web Tools</a> &nbsp; &nbsp; &nbsp;
+                  <a href="about.html" class="btn btn-primary ">Pick a Color</a>  &nbsp; &nbsp; &nbsp;
+                  <a href="image.html" class="btn btn-primary ">Image Tools</a>
+                </div>
+           
+        </div>
+        <hr>
+    </div>
+    
+    <div class="text-center">
+      <a href="color.html" class="btn btn-primary ">Find Best Color Combination</a> 
+  </div>
+  
+    <div class="container">
+      <div id="panel">
+
+      </div>
+      <br><br>
+      <div class="color-picker"></div>
+
+    </div>
+
+  
+   <br>
+
+
+
+        
+   
+   <script src="js/pickr.min.js"></script>
+<script src="js/index.js"></script>
+
+  </body>
+</html>

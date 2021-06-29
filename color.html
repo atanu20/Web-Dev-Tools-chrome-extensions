@@ -1,0 +1,391 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <title>My First Chrome Extention</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Mate SC', serif;
+        }
+        
+      .container{
+        width: 500px;
+        
+        
+        padding: 10px;
+        
+        
+      }
+      #panel{
+          width: 100%;
+          height: 250px;
+          background-color: rgb(4, 99, 42);
+      }
+      
+      .img{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        display: block;
+      }
+      .text{
+          margin: 15px 0;
+          background-color: purple;
+          color: #fff;
+          text-align: center;
+      }
+      .btn-primary{
+          background-color: #7309d6;
+          padding: 8px 15px;
+          border-radius: 0;
+          outline: none;
+          border:  none;
+      }
+      
+      .bggg{
+          
+          height: 150px;
+         width: 150px;
+         padding: 15px;
+         text-align: center;
+           
+      }
+     table .btn{
+         background-color: transparent;
+        color:white;
+
+     }
+     table .btn:hover{
+        animation:anim1 0.5s linear infinite;
+     }
+     @keyframes anim1 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+     table .btn:focus{
+         box-shadow: none;
+         outline: none;
+     }
+
+     .bg1{
+        background-color:  #7309d6;
+     }
+     .bg2{
+         background-color: #2ecc71;
+     }
+    
+     .bg3{
+         background-color: #3498db;
+     }
+     .bg4{
+         background-color: #95a5a6;
+     }
+     .bg5{
+         background-color: #f39c12;
+     }
+     .bg6{
+         background-color: #badc58;
+     }
+    .bg7{
+        background-color:  #537108 ;
+    }
+     .bg8{
+         background-color: #1dd1a1;
+     }
+      .bg9{
+          background-color: #d6133e;
+      }
+
+
+      .bg10{
+        background-color:  #EE5A24;
+     }
+     .bg11{
+         background-color: #009432;
+     }
+     .bg12{
+          background-color: #0652DD;
+      }
+    
+     .bg13{
+         background-color: #D980FA;
+     }
+     .bg14{
+         background-color: #6F1E51;
+     }
+     .bg15{
+         background-color: #EA2027;
+     }
+     .bg16{
+         background-color: #1289A7;
+     }
+    .bg17{
+        background-color:  #F79F1F ;
+    }
+     .bg18{
+         background-color: #130f40;
+     }
+      
+.bg21{
+    background-color:#3b5998 ;
+}
+.bg22{
+    background-color: #55acee;
+}
+.bg23{
+    background-color: #bd081c;
+}
+.bg24{
+    background-color: #0077B5;
+}
+.bg25{
+    background-color: #b92b27;
+}
+.bg26{
+    background-color: #FF0000;
+}
+.bg27{
+    background-color: #25D366;
+}
+.bg28{
+    background-color: #ff5700;
+}
+.bg29{
+    background-color: #00AFF0;
+}
+.bg30{
+    background-color: #4285F4;
+}
+.bg31{
+    background-color: #bc2a8d;
+}
+.bg32{
+    background-color: #410093;
+}
+    </style>
+  </head>
+  <body >
+    <br><br>
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="img">
+        <div class="text">
+           <h3>Welcome to Web Dev Tools</h3>
+        </div>
+        <div class="tab">
+          
+                <div class="text-center">
+                  <a href="index.html" class="btn btn-primary ">Web Tools</a> &nbsp; &nbsp; &nbsp;
+                  <a href="about.html" class="btn btn-primary ">Pick a Color</a>  &nbsp; &nbsp; &nbsp;
+                  <a href="image.html" class="btn btn-primary ">Image Tools</a>
+                </div>
+           
+        </div>
+        <hr>
+    </div>
+   <div class="container">
+       
+       <div class="row">
+        <table class="mx-auto">
+            <tr>
+                <td class="bg1 bggg">                
+                    <button class="btn" data-clipboard-text="#7309d6" >
+                        #7309d6
+                    </button>
+                </td>
+                <td class="bg2 bggg">                
+                    <button class="btn" data-clipboard-text="#2ecc71" >
+                        #2ecc71
+                    </button>
+                </td>
+                <td class="bg3 bggg">                
+                    <button class="btn" data-clipboard-text="#3498db" >
+                        #3498db
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg4 bggg">                
+                    <button class="btn" data-clipboard-text="#95a5a6" >
+                        #95a5a6
+                    </button>
+                </td>
+                <td class="bg5 bggg">                
+                    <button class="btn" data-clipboard-text="#f39c12" >
+                        #f39c12
+                    </button>
+                </td>
+                <td class="bg6 bggg">                
+                    <button class="btn" data-clipboard-text="#badc58" >
+                        #badc58
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg7 bggg">                
+                    <button class="btn" data-clipboard-text="#537108" >
+                        #537108
+                    </button>
+                </td>
+                <td class="bg8 bggg">                
+                    <button class="btn" data-clipboard-text="#1dd1a1" >
+                        #1dd1a1
+                    </button>
+                </td>
+                <td class="bg9 bggg">                
+                    <button class="btn" data-clipboard-text="#d6133e" >
+                        #d6133e
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="bg10 bggg">                
+                    <button class="btn" data-clipboard-text="#EE5A24" >
+                        #EE5A24
+                    </button>
+                </td>
+                <td class="bg11 bggg">                
+                    <button class="btn" data-clipboard-text="#009432" >
+                        #009432
+                    </button>
+                </td>
+                <td class="bg12 bggg">                
+                    <button class="btn" data-clipboard-text="#0652DD" >
+                        #0652DD
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg13 bggg">                
+                    <button class="btn" data-clipboard-text="#D980FA" >
+                        #D980FA
+                    </button>
+                </td>
+                <td class="bg14 bggg">                
+                    <button class="btn" data-clipboard-text="#6F1E51" >
+                        #6F1E51
+                    </button>
+                </td>
+                <td class="bg15 bggg">                
+                    <button class="btn" data-clipboard-text="#EA2027" >
+                        #EA2027 
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg16 bggg">                
+                    <button class="btn" data-clipboard-text="#1289A7" >
+                        #1289A7
+                    </button>
+                </td>
+                <td class="bg17 bggg">                
+                    <button class="btn" data-clipboard-text="#F79F1F" >
+                        #F79F1F
+                    </button>
+                </td>
+                <td class="bg18 bggg">                
+                    <button class="btn" data-clipboard-text="#130f40" >
+                        #130f40
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+         <div class="text-center mt-5 mb-4 pl-5">
+            <strong >Social Media Color code</strong>
+         </div>
+        
+        
+        <table class="mx-auto">
+            <tr>
+                <td class="bg21 bggg">                
+                    <button class="btn" data-clipboard-text="#3b5998" >
+                        Facebook
+                    </button>
+                </td>
+                <td class="bg22 bggg">                
+                    <button class="btn" data-clipboard-text="#2ecc71" >
+                        Twitter
+                    </button>
+                </td>
+                <td class="bg23 bggg">                
+                    <button class="btn" data-clipboard-text="#bd081c" >
+                        Pinterest
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg24 bggg">                
+                    <button class="btn" data-clipboard-text="#0077B5" >
+                        LinkedIn
+                    </button>
+                </td>
+                <td class="bg25 bggg">                
+                    <button class="btn" data-clipboard-text="#b92b27" >
+                       Quora
+                    </button>
+                </td>
+                <td class="bg26 bggg">                
+                    <button class="btn" data-clipboard-text="#FF0000" >
+                        Youtube
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg27 bggg">                
+                    <button class="btn" data-clipboard-text="#25D366" >
+                        whatsapp
+                    </button>
+                </td>
+                <td class="bg28 bggg">                
+                    <button class="btn" data-clipboard-text="#ff5700" >
+                        Reddit
+                    </button>
+                </td>
+                <td class="bg29 bggg">                
+                    <button class="btn" data-clipboard-text="#00AFF0" >
+                        Skype
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg30 bggg">                
+                    <button class="btn" data-clipboard-text="#4285F4" >
+                        google
+                    </button>
+                </td>
+                <td class="bg31 bggg">                
+                    <button class="btn" data-clipboard-text="#bc2a8d" >
+                       Instagram
+                    </button>
+                </td>
+                <td class="bg32 bggg">                
+                    <button class="btn" data-clipboard-text="#410093" >
+                        Yahoo
+                    </button>
+                </td>
+            </tr>
+
+            
+           
+            
+
+        </table>
+       </div>
+   </div>
+  
+<script src="js/clipboard.min.js"></script>
+<script src="js/clip.js"></script>
+  </body>
+</html>
